@@ -306,5 +306,41 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const progressBar = document.querySelector(".progress-bar");
+        progressBar.style.width = "0%";
+        setTimeout(() => {
+          progressBar.style.transition = "width 1.5s ease-in-out";
+          progressBar.style.width = "80%";
+        }, 500);
+
+        const searchInput = document.querySelector('input[type="search"]');
+        searchInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            alert(
+              "Searching for: " +
+                this.value +
+                "... (Backend integration in progress)"
+            );
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const registeredName =
+          localStorage.getItem("puer_user_name") || "Boran Köseoğlu";
+
+        const welcomeHeader = document.querySelector("h1.display-6");
+        if (welcomeHeader)
+          welcomeHeader.innerText = `Welcome, ${registeredName.split(" ")[0]}!`;
+
+        const userDropdown = document.getElementById("userDropdown");
+        if (userDropdown)
+          userDropdown.innerHTML = `<i class="bi bi-person-circle me-1"></i> ${registeredName}`;
+      });
+    </script>
   </body>
 </html>

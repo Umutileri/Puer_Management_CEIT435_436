@@ -187,5 +187,26 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Sayfanın hemen yenilenmesini engelle
+
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("email").value;
+
+        if (fullName && email) {
+          // İsmi tarayıcı hafızasına kaydet
+          localStorage.setItem("puer_user_name", fullName);
+
+          // Başarılı efekti (İsteğe bağlı alert yerine şık bir yönlendirme)
+          this.innerHTML =
+            '<div class="text-center py-4"><div class="spinner-border text-primary" role="status"></div><p class="mt-2">Creating Account...</p></div>';
+
+          setTimeout(() => {
+            window.location.href = "login.html";
+          }, 1500);
+        }
+      });
+    </script>
   </body>
 </html>

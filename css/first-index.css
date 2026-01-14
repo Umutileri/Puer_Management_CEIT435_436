@@ -1,75 +1,98 @@
 :root {
   --primary: #ff9102;
+
   --primary-light: #ff8800;
 
   --text-dark: #212529;
+
   --bg-light: #f8f9fa;
 
   --secondary-light: #f0e6f2;
+
   --box-shadow-base: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
   --border-radius-base: 0.75rem;
 }
 
 body {
   background-color: var(--bg-light);
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg-primary,
 .btn-primary {
   transition: all 0.5s ease;
+
   background-color: var(--primary) !important;
+
   border-color: var(--primary) !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--text-dark) !important;
+
   border-color: var(--text-dark) !important;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
 
 .btn-outline-light {
   transition: all 0.5s ease;
+
   border-color: white !important;
+
   color: white !important;
 }
+
 .btn-outline-light:hover {
   background-color: white !important;
+
   color: var(--primary) !important;
 }
+
 .btn-outline-secondary {
   transition: all 0.3s ease;
 }
+
 .btn-outline-secondary:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
+
 .navbar-brand {
   color: var(--primary) !important;
 }
+
 .navbar-brand:hover {
   color: var(--primary-light) !important;
 }
 
 nav .navbar-brand {
   color: white !important;
+
   transition: color 0.3s;
 }
+
 nav .btn-primary:hover {
   box-shadow: none !important;
+
   transform: none !important;
 }
 
 .navbar .form-control-sm {
   border-radius: 0.3rem 0 0 0.3rem !important;
 }
+
 .navbar .btn-search {
   border-radius: 0 0.3rem 0.3rem 0 !important;
 }
 
 .card {
   border-radius: var(--border-radius-base);
+
   border: none;
+
   transition: transform 0.3s ease;
 }
 
@@ -89,23 +112,28 @@ nav .btn-primary:hover {
 .progress-lg {
   height: 30px !important;
 }
+
 .progress-lg .progress-bar {
   font-weight: bold;
 }
 
 #login-page-central {
   padding: 0;
+
   margin: 0;
 }
 
 .auth-wrapper {
   width: 100%;
+
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
 }
 
 .auth-panel {
   flex: 1 1 50%;
+
   min-height: 550px;
+
   padding: 3rem;
 }
 
@@ -115,10 +143,15 @@ nav .btn-primary:hover {
 
 .promo-panel {
   background: linear-gradient(135deg, var(--primary-light), var(--primary));
+
   color: white;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   text-align: center;
 }
 
@@ -128,14 +161,19 @@ nav .btn-primary:hover {
 
 .promo-box {
   background-color: rgba(255, 255, 255, 0.1);
+
   border-radius: 0.5rem;
+
   padding: 1rem;
+
   margin-top: 1rem;
 }
 
 .login-btn {
   padding: 12px !important;
+
   border-radius: 0.5rem !important;
+
   transition: all 0.3s ease;
 }
 
@@ -159,27 +197,43 @@ nav .btn-primary:hover {
 
 .promo-panel {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   text-align: center;
+
   background: linear-gradient(135deg, var(--primary-light), var(--primary));
+
   color: white;
 }
+
 .promo-panel img {
   max-height: 280px;
+
   width: auto;
+
   display: block;
+
   margin: 0 auto;
 }
 
 .promo-panel .promo-box {
   max-width: 300px;
+
   margin-left: auto;
+
   margin-right: auto;
+
   background-color: rgba(255, 255, 255, 0.15);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
+
   color: white;
+
   padding: 1rem;
+
   border-radius: 0.5rem;
 }
 
@@ -195,178 +249,53 @@ nav .btn-primary:hover {
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--primary) !important;
 }
+
 .navbar .btn-outline-primary {
   transition: all 0.5s ease;
 }
+
 .navbar .btn-outline-primary:hover {
   background-color: var(--text-dark) !important;
+
   border-color: var(--text-dark) !important;
 }
+
 .btn-outline-primary {
   border-color: var(--primary) !important;
+
   color: var(--primary) !important;
 }
+
 .btn-outline-primary:hover {
   background-color: var(--primary) !important;
+
   color: white !important;
 }
+
 .nav-link.active {
   color: var(--primary) !important;
+
   font-weight: 600;
 }
 
 #features p {
   font-size: 0.98rem !important;
 }
+
 #features .card {
   transition: all 0.5s ease;
 }
+
 #features .card:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+
   transform: translateY(-15px);
 }
+
 #landing-nav a {
   padding-bottom: 4px;
+
   border-bottom: 2px solid transparent;
+
   transition: border-color 0.2s ease;
-}
-
-#landing-nav a:hover,
-#landing-nav a.active {
-  border-bottom: 1px solid var(--primary) !important;
-}
-/* Navbar Genel Yapısı */
-.navbar {
-  background-color: #ff9102 !important;
-  padding: 0.7rem 2rem !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-}
-
-.navbar-brand {
-  font-size: 1.4rem !important;
-  letter-spacing: -0.5px;
-  transition: transform 0.5s ease;
-}
-
-.navbar-brand:hover {
-  transform: scale(1.02);
-  color: #333 !important;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-weight: 500 !important;
-  padding: 0.6rem 1rem !important;
-  margin: 0 4px;
-  border-radius: 10px;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.nav-link:hover {
-  color: #fff !important;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.nav-link.active {
-  background: rgba(0, 0, 0, 0.1) !important;
-  color: #fff !important;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.navbar .input-group {
-  border-radius: 12px !important;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.navbar .input-group:focus-within {
-  background: rgba(255, 255, 255, 1);
-  width: 250px;
-}
-
-.navbar .input-group .form-control {
-  color: white !important;
-}
-
-.navbar .input-group:focus-within .form-control {
-  color: #333 !important;
-}
-
-/* Kullanıcı Dropdown */
-#userDropdown {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem !important;
-  border-radius: 50px; /* Hap şeklinde tasarım */
-  margin-left: 15px;
-}
-
-#userDropdown:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-#taskList .list-group-item {
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
-  margin-bottom: 10px;
-  border-radius: 12px !important;
-  padding: 1rem 1.5rem !important;
-  transition: all 0.3s ease;
-}
-
-#taskList .list-group-item:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
-}
-
-/* Checkbox büyütme */
-.form-check-input {
-  width: 1.3em;
-  height: 1.3em;
-  cursor: pointer;
-}
-.card.bg-primary {
-  background: linear-gradient(135deg, #ff9102, #ffb700) !important;
-  border-radius: 15px !important;
-  transition: all 0.3s ease;
-}
-
-.card.bg-success {
-  background: linear-gradient(135deg, #28a745, #34ce57) !important;
-  border-radius: 15px !important;
-}
-
-.card h2 {
-  font-size: 2.5rem !important;
-  letter-spacing: -1px;
-}
-
-/* Progress Bar'ı daha ince ve modern yapalım */
-.progress {
-  height: 12px !important; /* Çok kalın bar kaba duruyor */
-  border-radius: 20px !important;
-  background-color: #e9ecef !important;
-  overflow: visible !important;
-}
-
-.progress-bar {
-  border-radius: 20px !important;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(255, 145, 2, 0.3);
-}
-
-/* Görev Listesi (Task List) */
-#taskList .list-group-item {
-  border: none !important;
-  background: #ffffff;
-  margin-bottom: 12px;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-  padding: 1.2rem !important;
-}
-
-/* Checkbox'ları renklendirelim */
-.form-check-input:checked {
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
 }
