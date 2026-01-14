@@ -14,13 +14,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      :root {
-        --puer-gradient: linear-gradient(135deg, #ff9102 0%, #ff6b00 100%);
-      }
       body {
         background-color: #f8f9fa;
         font-family: "Segoe UI", sans-serif;
       }
+      /* Dashboard Sayfası ile Aynı Navbar Stili */
       .dashboard-page .navbar {
         background: var(--puer-gradient) !important;
         border-bottom: none;
@@ -43,7 +41,6 @@
         border-color: #ff9102;
         background-color: #fff9f2;
       }
-
       /* Aktif Yıldızlar */
       .star-rating {
         font-size: 1.8rem;
@@ -66,22 +63,43 @@
       }
     </style>
   </head>
-  <body class="dashboard-page">
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
-      <div class="container-xl">
+  <body class="dashboard-page d-flex flex-column min-vh-100">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container-fluid container-xl">
         <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
-          <i class="bi bi-person-workspace me-2 fs-4 text-white"></i>
+          <i class="bi bi-person-workspace me-2 fs-4"></i>
           <span class="fs-5 fw-bold text-white">Puer Management</span>
         </a>
-        <div class="collapse navbar-collapse">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html"
+                ><i class="bi bi-house-door me-1"></i> Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"
+                ><i class="bi bi-list-task me-1"></i> Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="evaluation.html"
+                ><i class="bi bi-check2-circle me-1"></i> Evaluation</a
+              >
+            </li>
+          </ul>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown ms-lg-3">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -93,12 +111,14 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end shadow border-0">
                 <li>
-                  <a class="dropdown-item" href="profile.html">Profile</a>
+                  <a class="dropdown-item" href="profile.html"
+                    ><i class="bi bi-gear me-2"></i> Account Settings</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item text-danger" href="login.html"
-                    >Logout</a
+                    ><i class="bi bi-box-arrow-right me-2"></i> Logout</a
                   >
                 </li>
               </ul>
@@ -108,7 +128,7 @@
       </div>
     </nav>
 
-    <main class="container-xl my-5">
+    <main class="container-xl my-5 flex-grow-1">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <h1 class="fw-bold mb-1">Peer Evaluation</h1>
@@ -125,7 +145,7 @@
               >
                 <img
                   src="images/avatar.png"
-                  class="rounded-circle mx-auto mb-3"
+                  class="rounded-circle mx-auto mb-3 shadow-sm"
                   width="60"
                   height="60"
                 />
@@ -140,7 +160,7 @@
               >
                 <img
                   src="images/avatar.png"
-                  class="rounded-circle mx-auto mb-3"
+                  class="rounded-circle mx-auto mb-3 shadow-sm"
                   width="60"
                   height="60"
                 />
@@ -155,7 +175,7 @@
               >
                 <img
                   src="images/avatar.png"
-                  class="rounded-circle mx-auto mb-3"
+                  class="rounded-circle mx-auto mb-3 shadow-sm"
                   width="60"
                   height="60"
                 />
@@ -214,19 +234,22 @@
       </div>
     </main>
 
+    <footer class="bg-dark text-white-50 py-3 mt-auto text-center">
+      <small>&copy; 2026 Puer Management | CEIT 435</small>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // İsim Senkronizasyonu
+        // İsim Senkronizasyonu (localStorage'dan çekiyor)
         const savedName =
           localStorage.getItem("puer_user_name") || "Boran Köseoğlu";
-        if (document.getElementById("userDropdown")) {
-          document.getElementById(
-            "userDropdown"
-          ).innerHTML = `<i class="bi bi-person-circle me-1"></i> ${savedName}`;
+        const userDropdown = document.getElementById("userDropdown");
+        if (userDropdown) {
+          userDropdown.innerHTML = `<i class="bi bi-person-circle me-1"></i> ${savedName}`;
         }
 
-        // YILDIZ SEÇME MANTIĞI
+        // Yıldız Seçme Mekanizması
         document.querySelectorAll(".star-rating i").forEach((star) => {
           star.addEventListener("click", function () {
             const val = this.getAttribute("data-value");
@@ -254,7 +277,9 @@
           btn.innerHTML =
             '<span class="spinner-border spinner-border-sm me-2"></span>Submitting...';
           setTimeout(() => {
-            alert("Evaluation submitted! Fairness score updated.");
+            alert(
+              "Evaluation submitted successfully! Fairness metrics updated."
+            );
             window.location.href = "dashboard.html";
           }, 1200);
         });
