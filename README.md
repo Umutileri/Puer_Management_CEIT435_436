@@ -1,4 +1,4 @@
-# 📚 Puer Management
+# 📚 Puer Management – CEIT 435 / CEIT 436 Project
 
 ## ✨ Project Summary
 [Visit Live Demo](https://umutileri.github.io/Puer_Proje_Website_LayoutV1/) ✨
