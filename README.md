@@ -35,20 +35,99 @@ This project has been developed using purely **static frontend** technologies to
 
 ---
 
-## 🚧 Version Note (V1 - Static Frontend)
+> ⚠️ Major Update: The entire user interface has been fully redesigned with a modern, scalable, and user-centered approach.
+### 📊 Dashboard
+- Overview of active projects, completed tasks, and pending evaluations  
+- Weekly contribution tracking  
+- Recent group activity feed  
 
-**Important Note:** The files in this repository represent the **V1 static frontend view** of the Puer Management application.
+### 📁 Projects Page (Project Roadmap)
+- Task tracking and progress visualization  
+- Milestone-based structure  
+- Interactive task management UI  
 
-* These pages focus only on the design, layout, and responsiveness of the user interface.
-* The current version **does not include any Backend, Database (PostgreSQL), or Python Flask** integration. Form submissions or button clicks are only simulated via static page navigation.
-* Backend and API connections will be integrated in future releases.
+### 📝 Evaluation System
+- Peer evaluation interface  
+- Rating system for teammates  
+- Feedback submission area  
+
+### 👤 Profile Page
+- User contribution statistics  
+- Completed task tracking  
+- Peer score visualization  
+- Skills overview  
+
+### 🔐 Authentication Pages
+- Login system  
+- Registration page  
+- Clean and user-friendly form design  
 
 ---
 
-## 🔮 Future Roadmap (Next Steps)
+## 🎨 UI/UX Improvements & Enhancements
 
-The following features and integrations are planned for V2 and beyond:
+The most significant progress in this version is the **complete redesign of the user interface**.  
+The entire frontend structure was rebuilt to create a more modern, consistent, and scalable system.
 
-* **Backend Integration:** Connecting the frontend forms and dashboards to the Flask API and PostgreSQL database.
-* **Projects/Tasks Page:** Implementing the dynamic Kanban-style task board and task assignment interface.
-* **JavaScript Logic:** Adding core application logic, including dynamic data fetching and progress bar updates based on API responses.
+---
+
+### 🔹 System-Wide UI Redesign
+
+All core pages were redesigned:
+
+- Dashboard  
+- Projects Page  
+- Evaluation Page  
+- Profile Page  
+- Login & Register  
+
+Improvements include:
+- Modern card-based layout  
+- Better spacing and typography  
+- Clear visual hierarchy  
+- Improved usability and readability  
+
+---
+
+### 🌙 Dark Mode Support
+
+A fully functional **Dark Mode** feature was implemented:
+
+- Light / Dark theme switching  
+- Consistent styling across all pages  
+- Improved usability for long sessions  
+
+---
+
+### ➕ Project Creation Feature
+
+A new **Create Project** interface was added:
+
+- Users can initiate new projects  
+- Task structure can be defined  
+- Designed to support future backend integration  
+
+---
+
+### 🧩 UI Consistency & Component Structure
+
+- Unified design system across all pages  
+- Reusable components  
+- Consistent spacing, colors, and layout  
+
+This ensures a seamless experience throughout the application.
+
+---
+
+### 🚀 Overall Impact
+
+The system has evolved from a basic interface into a:
+
+- Modern  
+- Scalable  
+- User-centered  
+
+platform, ready for backend integration and advanced features.
+
+---
+
