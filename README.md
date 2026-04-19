@@ -8,19 +8,6 @@ Puer Management is a platform for **project management and fair peer evaluation*
 
 ---
 
-## 🚀 Key Features (Frontend View)
-
-This version (V1) provides the static visual representation of the final user interface (UI) and core interaction points.
-
-* **Dashboard:** An overview page that allows the user to instantly see their active projects, completed tasks, pending evaluations, and recent group activity.
-* **Account Settings:** A tabbed interface where users can edit their personal details (Name), change their password, and view individual contribution metrics.
-    * Contribution metrics include the task completion rate and a summary of peer evaluations.
-* **Navigation Bar:** Quick access to the Dashboard, Projects, and Evaluation pages.
-* **Authentication Pages:** Forms for user login (`login.html`) and new account creation (`register.html`).
-* **Landing Page:** An informative page showcasing the application's key features and Frequently Asked Questions (FAQ).
-
----
-
 ## 💻 Technologies Used
 
 This project has been developed using purely **static frontend** technologies to provide a modern and responsive user experience.
