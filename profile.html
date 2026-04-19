@@ -1,345 +1,406 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puer Management | Profile</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      :root {
-        --puer-orange: #ff9102;
-      }
-      body {
-        background-color: #f8f9fa;
-        font-family: "Segoe UI", sans-serif;
-      }
-
-      .profile-hero {
-        background: white;
-        border-radius: 24px;
-        border: none;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        margin-top: 2rem;
-      }
-      .avatar-img {
-        border: 5px solid white;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-      }
-      .avatar-img:hover {
-        transform: rotate(5deg) scale(1.05);
-      }
-
-      .glass-stat-card {
-        background: white;
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        border-radius: 20px;
-        transition: all 0.3s ease;
-      }
-      .glass-stat-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 24px rgba(255, 145, 2, 0.12);
-      }
-
-      .icon-box {
-        width: 50px;
-        height: 50px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-      }
-
-      .timeline-item {
-        border-left: 2px dashed #dee2e6;
-        padding-left: 20px;
-        position: relative;
-        margin-bottom: 20px;
-      }
-      .timeline-item::before {
-        content: "";
-        position: absolute;
-        left: -7px;
-        top: 0;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: var(--puer-orange);
-      }
-
-      .skill-pill {
-        background: #fff;
-        border: 1px solid #eee;
-        padding: 6px 15px;
-        border-radius: 50px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        transition: 0.2s;
-      }
-      .skill-pill:hover {
-        background: var(--puer-orange);
-        color: white;
-        border-color: var(--puer-orange);
-      }
-      .progress-bar {
-        background-color: #ff6b00;
-      }
-    </style>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="dashboard-page">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
-    >
-      <div class="container-fluid container-xl">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <i class="bi bi-person-workspace me-2 fs-4"></i>
-          <span class="fs-5 fw-bold">Puer Management</span>
+
+  <body data-page="profile">
+    <nav class="navbar navbar-expand-lg fixed-top modern-puer-nav">
+      <div class="container container-xl py-2">
+        <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+          <div class="logo-wrapper shadow-orange">
+            <img src="images/2-removebg-preview.png" alt="Logo" width="38" />
+          </div>
+          <div class="ms-3 brand-info">
+            <span class="puer-text">PUER</span>
+            <div class="puer-dot"></div>
+          </div>
         </a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Open menu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list fs-2 text-dark"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                <i class="bi bi-house-door me-1"></i> Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects-page.html">
-                <i class="bi bi-list-task me-1"></i> Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="evaluation.html">
-                <i class="bi bi-check2-circle me-1"></i> Evaluation
-              </a>
-            </li>
-          </ul>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navContent"
+        >
+          <div class="nav-pill-container px-2 py-1">
+            <ul class="navbar-nav gap-1">
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                  <i class="bi bi-grid-fill me-2"></i>Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects-page.html">
+                  <i class="bi bi-stack me-2"></i>Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="evaluation.html">
+                  <i class="bi bi-heart-pulse-fill me-2"></i>Evaluations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          <ul class="navbar-nav ms-auto">
-            <form class="d-flex me-3" role="search">
-              <div class="input-group">
-                <input
-                  class="form-control form-control-sm"
-                  type="search"
-                  placeholder="Search tasks or groups..."
-                  aria-label="Search"
-                />
-                <button
-                  class="btn btn-outline-light btn-sm btn-search"
-                  type="submit"
+        <div class="d-flex align-items-center gap-3 nav-actions">
+          <button
+            id="themeToggle"
+            class="theme-toggle-btn"
+            onclick="toggleTheme()"
+            aria-label="Toggle dark mode"
+          >
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+          <div class="dropdown user-pill shadow-sm">
+            <a
+              href="#"
+              class="d-flex align-items-center text-decoration-none"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/avatar.jpg"
+                alt="Profile"
+                class="rounded-circle profile-img"
+                width="36"
+                height="36"
+              />
+              <i class="bi bi-chevron-down ms-2 small text-white"></i>
+            </a>
+
+            <ul
+              class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-3"
+            >
+              <li class="px-3 py-2 border-bottom mb-1">
+                <small class="text-muted d-block">Logged in as:</small>
+                <span class="fw-bold text-muted" id="dropdown-user-name"
+                  >User Name</span
                 >
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </form>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="userDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bi bi-person-circle me-1"></i> Boran Köseoğlu
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="userDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="profile.html"
-                    ><i class="bi bi-gear me-2"></i> Account Settings</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="login.html"
-                    ><i class="bi bi-box-arrow-right me-2"></i> Logout</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="profile.html"
+                  >Profile Settings</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  id="logoutBtn"
+                  href="login.html"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
-    <main class="container-xl mb-5">
-      <div class="card profile-hero mb-4">
-        <div class="card-body p-4 p-md-5">
-          <div
-            class="d-flex flex-column flex-md-row align-items-center gap-4 text-center text-md-start"
-          >
-            <img
-              src="images/avatar.jpg"
-              class="rounded-circle avatar-img"
-              width="130"
-              height="130"
-            />
-            <div class="flex-grow-1">
-              <h1 id="profileName" class="fw-bold mb-1 display-6">
-                Boran Köseoğlu
-              </h1>
-              <p class="text-muted mb-3">
-                <i class="bi bi-mortarboard me-2"></i>CEIT Student | Project
-                Lead
-              </p>
-              <div
-                class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2"
-              >
-                <span
-                  class="badge bg-primary bg-opacity-10 text-dark px-3 py-2 rounded-pill"
-                  >UI/UX Specialist</span
-                >
-                <span
-                  class="badge bg-warning bg-opacity-10 text-warning px-3 py-2 rounded-pill"
-                  >Scrum Master</span
-                >
-              </div>
-            </div>
-            <button
-              class="btn btn-primary rounded-pill px-4 fw-bold"
-              id="editProfileBtn"
+    <main class="container container-xl profile-main">
+      <section class="profile-hero">
+        <div class="profile-hero-left">
+          <span class="profile-kicker">ACCOUNT OVERVIEW</span>
+          <h1>Profile Settings</h1>
+          <p>Manage your personal details, role, and workspace preferences.</p>
+
+          <div class="profile-top-tags">
+            <span class="profile-tag" id="heroRoleText"
+              >Frontend Developer</span
             >
-              <i class="bi bi-gear-wide-connected me-2"></i>Edit Profile
-            </button>
+            <span class="profile-tag">Group Puer</span>
+            <span class="profile-tag">Account Active</span>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <div class="row g-4 mb-4">
-            <div class="col-md-4">
-              <div class="card glass-stat-card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="icon-box-fire">
-                    <i class="bi bi-fire fs-3"></i>
-                  </div>
-                  <h6 class="text-dark fw-bold small">CONTRIBUTION</h6>
-                  <h2 class="fw-bold mb-1 text-dark">87%</h2>
-                  <div
-                    class="progress"
-                    style="height: 6px; background: rgba(255, 255, 255, 0.5)"
-                  >
-                    <div class="progress-bar" style="width: 87%"></div>
-                  </div>
+      <section class="profile-layout">
+        <aside class="profile-sidebar-card">
+          <div class="profile-avatar-wrap">
+            <img src="images/avatar.jpg" alt="Profile photo" />
+          </div>
+
+          <h2 id="profileFullName">Boran Köseoğlu</h2>
+          <p id="profileEmail">boran@example.com</p>
+
+          <div class="profile-role-pill" id="profileRoleBadge">
+            Frontend Developer
+          </div>
+
+          <div class="profile-stat-list">
+            <div class="profile-stat-item">
+              <strong>12</strong>
+              <span>Completed Tasks</span>
+            </div>
+            <div class="profile-stat-item">
+              <strong>4.8</strong>
+              <span>Peer Score</span>
+            </div>
+            <div class="profile-stat-item">
+              <strong>2</strong>
+              <span>Active Milestones</span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="profile-content">
+          <div class="profile-section-card">
+            <div class="profile-section-head">
+              <h3>
+                <i class="bi bi-person-lines-fill"></i> Personal Information
+              </h3>
+              <p>Update your main profile details</p>
+            </div>
+
+            <div class="profile-form-grid">
+              <div class="profile-field">
+                <label for="fullName">Full Name</label>
+                <input
+                  id="fullName"
+                  type="text"
+                  class="profile-input"
+                  value="Boran Köseoğlu"
+                />
+              </div>
+
+              <div class="profile-field">
+                <label for="emailAddress">Email Address</label>
+                <input
+                  id="emailAddress"
+                  type="email"
+                  class="profile-input"
+                  value="boran@example.com"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section-card">
+            <div class="profile-section-head">
+              <h3><i class="bi bi-briefcase-fill"></i> Project Role</h3>
+              <p>Define your responsibility in the team</p>
+            </div>
+
+            <div class="profile-form-grid">
+              <div class="profile-field">
+                <label for="projectRole">Project Role</label>
+                <select id="projectRole" class="profile-input">
+                  <option>Frontend Developer</option>
+                  <option>Backend Developer</option>
+                  <option>UI/UX Designer</option>
+                  <option>Documentation</option>
+                  <option>Team Lead</option>
+                  <option>QA / Testing</option>
+                </select>
+              </div>
+
+              <div class="profile-field">
+                <label for="responsibilityArea">Responsibility Area</label>
+                <input
+                  id="responsibilityArea"
+                  type="text"
+                  class="profile-input"
+                  value="Dashboard UI, forms, page layouts"
+                />
+              </div>
+
+              <div class="profile-field">
+                <label for="teamPosition">Team Position</label>
+                <select id="teamPosition" class="profile-input">
+                  <option>Core Member</option>
+                  <option>Lead Member</option>
+                  <option>Support Member</option>
+                </select>
+              </div>
+
+              <div class="profile-field">
+                <label for="availability">Availability</label>
+                <select id="availability" class="profile-input">
+                  <option>Available</option>
+                  <option>Busy</option>
+                  <option>Partially Available</option>
+                </select>
+              </div>
+
+              <div class="profile-field profile-field-full">
+                <label for="bioText">Short Bio</label>
+                <textarea
+                  id="bioText"
+                  class="profile-textarea"
+                  rows="4"
+                  placeholder="Write a short description about your role..."
+                >
+Focused on building the frontend structure and improving the overall user experience of the project.</textarea
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section-card">
+            <div class="profile-section-head">
+              <h3><i class="bi bi-gear-fill"></i> Account Settings</h3>
+              <p>Security and preference options</p>
+            </div>
+
+            <div class="profile-form-grid">
+              <div class="profile-field">
+                <label for="newPassword">New Password</label>
+                <input
+                  id="newPassword"
+                  type="password"
+                  class="profile-input"
+                  placeholder="Enter a new password"
+                />
+              </div>
+
+              <div class="profile-field">
+                <label for="confirmNewPassword">Confirm Password</label>
+                <input
+                  id="confirmNewPassword"
+                  type="password"
+                  class="profile-input"
+                  placeholder="Re-enter new password"
+                />
+              </div>
+
+              <div class="profile-field profile-field-full">
+                <div class="profile-toggle-list">
+                  <label class="profile-toggle-item">
+                    <input type="checkbox" checked />
+                    <span>Email notifications enabled</span>
+                  </label>
+
+                  <label class="profile-toggle-item">
+                    <input type="checkbox" checked />
+                    <span>Show role in team profile</span>
+                  </label>
+
+                  <label class="profile-toggle-item">
+                    <input type="checkbox" />
+                    <span>Allow public project visibility</span>
+                  </label>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card glass-stat-card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="icon-box bg-success bg-opacity-10 text-success">
-                    <i class="bi bi-check2-circle fs-4"></i>
-                  </div>
-                  <h6 class="text-muted fw-bold small">COMPLETED</h6>
-                  <h2 class="fw-bold mb-1">12/20</h2>
-                  <span class="text-success small fw-bold">+3 New Tasks</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card glass-stat-card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="icon-box bg-warning bg-opacity-10 text-warning">
-                    <i class="bi bi-star-fill fs-4"></i>
-                  </div>
-                  <h6 class="text-muted fw-bold small">PEER SCORE</h6>
-                  <h2 class="fw-bold mb-1">4.9</h2>
-                  <span class="text-muted small">Top 5% of Class</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="card border-0 shadow-sm rounded-4 p-4">
-            <h5 class="fw-bold mb-4">Activity Stream</h5>
-            <div class="timeline-item">
-              <h6 class="fw-bold mb-0">Project Milestone 2 Uploaded</h6>
-              <p class="text-muted small mb-0">
-                Final deliverables and target user tests documented.
-              </p>
-              <small class="text-primary fw-bold">10 mins ago</small>
-            </div>
-            <div class="timeline-item mb-0">
-              <h6 class="fw-bold mb-0 text-muted">
-                Core UI Components Redesigned
-              </h6>
-              <p class="text-muted small mb-0 text-opacity-50">
-                Switched to Glassmorphism for better UX.
-              </p>
-              <small class="text-muted">Yesterday</small>
+            <div class="profile-actions">
+              <button
+                type="button"
+                class="profile-save-btn"
+                onclick="saveProfile()"
+              >
+                Save Changes
+              </button>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
-            <h5 class="fw-bold mb-3">Core Skills</h5>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="skill-pill">HTML5/CSS3</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">Project Management</span>
-              <span class="skill-pill">Flask</span>
-              <span class="skill-pill">UX Testing</span>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer-dark mt-4">
+      <div class="container text-center">
+        <small>&copy; 2026 Puer Management | CEIT 435</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        function updateAllNames(name) {
-          if (document.getElementById("profileName"))
-            document.getElementById("profileName").innerText = name;
-          if (document.getElementById("userDropdown")) {
-            document.getElementById(
-              "userDropdown"
-            ).innerHTML = `<i class="bi bi-person-circle me-1"></i> ${name}`;
-          }
+      document.addEventListener("DOMContentLoaded", function () {
+        const isLoggedIn = localStorage.getItem("puer_logged_in");
+        const userName = localStorage.getItem("puer_user_name");
+        const userEmail = localStorage.getItem("puer_user_email");
+
+        if (isLoggedIn !== "true" || !userName) {
+          window.location.href = "login.html";
+          return;
         }
 
-        const savedName =
-          localStorage.getItem("puer_user_name") || "Boran Köseoğlu";
-        updateAllNames(savedName);
+        const dropdownUserNameEl =
+          document.getElementById("dropdown-user-name");
+        const profileFullNameEl = document.getElementById("profileFullName");
+        const profileEmailEl = document.getElementById("profileEmail");
+        const fullNameInput = document.getElementById("fullName");
+        const emailInput = document.getElementById("emailAddress");
 
-        document
-          .getElementById("editProfileBtn")
-          .addEventListener("click", () => {
-            const newName = prompt("Update your name:", savedName);
-            if (newName && newName.trim() !== "") {
-              localStorage.setItem("puer_user_name", newName);
-              updateAllNames(newName);
-              alert("Profile updated successfully!");
-            }
+        if (dropdownUserNameEl) dropdownUserNameEl.textContent = userName;
+        if (profileFullNameEl) profileFullNameEl.textContent = userName;
+        if (profileEmailEl)
+          profileEmailEl.textContent = userEmail || "user@example.com";
+        if (fullNameInput) fullNameInput.value = userName;
+        if (emailInput && userEmail) emailInput.value = userEmail;
+
+        const logoutBtn = document.getElementById("logoutBtn");
+        if (logoutBtn) {
+          logoutBtn.addEventListener("click", function () {
+            localStorage.removeItem("puer_logged_in");
+            localStorage.removeItem("puer_user_name");
+            localStorage.removeItem("puer_user_email");
           });
+        }
+
+        const roleSelect = document.getElementById("projectRole");
+        if (roleSelect) {
+          roleSelect.addEventListener("change", function () {
+            const badge = document.getElementById("profileRoleBadge");
+            const heroRole = document.getElementById("heroRoleText");
+            if (badge) badge.textContent = this.value;
+            if (heroRole) heroRole.textContent = this.value;
+          });
+        }
       });
+
+      function saveProfile() {
+        const fullName = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("emailAddress").value.trim();
+
+        if (!fullName || !email) {
+          alert("Please fill in your name and email.");
+          return;
+        }
+
+        localStorage.setItem("puer_user_name", fullName);
+        localStorage.setItem("puer_user_email", email);
+
+        alert("Profile updated successfully.");
+      }
     </script>
+    <script src="dark.js"></script>
   </body>
 </html>

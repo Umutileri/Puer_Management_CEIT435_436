@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puer Management | Create Project</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/create-project.css" />
+  </head>
+
+  <body data-page="create-project">
+    <nav class="navbar navbar-expand-lg fixed-top modern-puer-nav">
+      <div class="container container-xl py-2">
+        <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+          <div class="logo-wrapper shadow-orange">
+            <img src="images/2-removebg-preview.png" alt="Logo" width="38" />
+          </div>
+          <div class="ms-3 brand-info">
+            <span class="puer-text">PUER</span>
+            <div class="puer-dot"></div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+        >
+          <i class="bi bi-list fs-2 text-white"></i>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navContent"
+        >
+          <div class="nav-pill-container px-2 py-1">
+            <ul class="navbar-nav gap-1">
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                  <i class="bi bi-grid-fill me-2"></i>Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projects-page.html">
+                  <i class="bi bi-stack me-2"></i>Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="evaluation.html">
+                  <i class="bi bi-heart-pulse-fill me-2"></i>Evaluations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 nav-actions">
+          <button
+            id="themeToggle"
+            class="theme-toggle-btn"
+            onclick="toggleTheme()"
+            aria-label="Toggle dark mode"
+          >
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+          <div class="dropdown user-pill shadow-sm">
+            <a
+              href="#"
+              class="d-flex align-items-center text-decoration-none"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/avatar.jpg"
+                alt="Profile"
+                class="rounded-circle profile-img"
+                width="36"
+                height="36"
+              />
+              <i class="bi bi-chevron-down ms-2 small text-white"></i>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-3"
+            >
+              <li class="px-3 py-2 border-bottom mb-1">
+                <small class="text-muted d-block">Logged in as:</small>
+                <span class="fw-bold text-muted" id="dropdown-user-name"
+                  >User</span
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="profile.html"
+                  >Profile Settings</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  id="logoutBtn"
+                  href="login.html"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="container container-xl create-main">
+      <!-- HERO -->
+      <section class="dashboard-hero mb-4">
+        <div>
+          <p class="hero-kicker mb-2">NEW PROJECT</p>
+          <h1 class="hero-title mb-2">Create a Project</h1>
+          <p class="hero-subtitle mb-0">
+            Set up your workspace, add team members, and define milestones.
+          </p>
+        </div>
+      </section>
+
+      <div class="steps-bar mb-4">
+        <div class="step-item active" id="stepIndicator1">
+          <div class="step-num">1</div>
+          <div class="step-label">Project Info</div>
+        </div>
+        <div class="step-item" id="stepIndicator2">
+          <div class="step-num">2</div>
+          <div class="step-label">Team Members</div>
+        </div>
+        <div class="step-item" id="stepIndicator3">
+          <div class="step-num">3</div>
+          <div class="step-label">Milestones</div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="step-panel active" id="step1">
+            <div class="form-card">
+              <div class="form-card-header">
+                <div class="form-card-icon">
+                  <i class="bi bi-folder-fill"></i>
+                </div>
+                <div>
+                  <div class="form-card-title">Project Information</div>
+                  <div class="form-card-sub">
+                    Fill in the basic details about your project
+                  </div>
+                </div>
+              </div>
+              <div class="form-card-body">
+                <div class="field-group">
+                  <label class="field-label">Project Name <span>*</span></label>
+                  <input
+                    type="text"
+                    id="projectName"
+                    class="field-input"
+                    placeholder="e.g. CEIT 435 - Puer Management"
+                    oninput="updatePreview()"
+                  />
+                  <div class="field-hint">
+                    Give your project a clear, recognizable name.
+                  </div>
+                </div>
+
+                <div class="field-grid">
+                  <div class="field-group">
+                    <label class="field-label">Course / Department</label>
+                    <input
+                      type="text"
+                      id="projectCourse"
+                      class="field-input"
+                      placeholder="e.g. CEIT 435"
+                      oninput="updatePreview()"
+                    />
+                  </div>
+                  <div class="field-group">
+                    <label class="field-label">Deadline <span>*</span></label>
+                    <input
+                      type="date"
+                      id="projectDeadline"
+                      class="field-input"
+                      oninput="updatePreview()"
+                    />
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label class="field-label">Project Description</label>
+                  <textarea
+                    id="projectDesc"
+                    class="field-textarea"
+                    placeholder="Briefly describe what this project is about..."
+                    oninput="updatePreview()"
+                  ></textarea>
+                </div>
+
+                <div class="field-grid">
+                  <div class="field-group">
+                    <label class="field-label">Project Type</label>
+                    <select
+                      id="projectType"
+                      class="field-select"
+                      onchange="updatePreview()"
+                    >
+                      <option value="">Select type...</option>
+                      <option>Software Development</option>
+                      <option>Research</option>
+                      <option>Design</option>
+                      <option>Data Analysis</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field-group">
+                    <label class="field-label">Visibility</label>
+                    <select id="projectVisibility" class="field-select">
+                      <option>Private (Team Only)</option>
+                      <option>Visible to Instructor</option>
+                      <option>Public</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label class="field-label">Project Color</label>
+                  <div class="color-options" id="colorPicker">
+                    <div
+                      class="color-opt selected"
+                      style="background: #f97316"
+                      data-color="#f97316"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #3b82f6"
+                      data-color="#3b82f6"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #22c55e"
+                      data-color="#22c55e"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #a855f7"
+                      data-color="#a855f7"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #ef4444"
+                      data-color="#ef4444"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #eab308"
+                      data-color="#eab308"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #06b6d4"
+                      data-color="#06b6d4"
+                      onclick="selectColor(this)"
+                    ></div>
+                    <div
+                      class="color-opt"
+                      style="background: #ec4899"
+                      data-color="#ec4899"
+                      onclick="selectColor(this)"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label class="field-label">Project Icon</label>
+                  <div class="emoji-options" id="emojiPicker">
+                    <div
+                      class="emoji-opt selected"
+                      data-emoji="🚀"
+                      onclick="selectEmoji(this)"
+                    >
+                      🚀
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="💡"
+                      onclick="selectEmoji(this)"
+                    >
+                      💡
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="🔬"
+                      onclick="selectEmoji(this)"
+                    >
+                      🔬
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="🎨"
+                      onclick="selectEmoji(this)"
+                    >
+                      🎨
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="📊"
+                      onclick="selectEmoji(this)"
+                    >
+                      📊
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="🛠️"
+                      onclick="selectEmoji(this)"
+                    >
+                      🛠️
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="📱"
+                      onclick="selectEmoji(this)"
+                    >
+                      📱
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="🌐"
+                      onclick="selectEmoji(this)"
+                    >
+                      🌐
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="📚"
+                      onclick="selectEmoji(this)"
+                    >
+                      📚
+                    </div>
+                    <div
+                      class="emoji-opt"
+                      data-emoji="⚙️"
+                      onclick="selectEmoji(this)"
+                    >
+                      ⚙️
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-actions">
+                <a href="projects-page.html" class="btn-back">
+                  <i class="bi bi-arrow-left"></i> Cancel
+                </a>
+                <button class="btn-next" onclick="goToStep(2)">
+                  Next: Team Members <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-panel" id="step2">
+            <div class="form-card">
+              <div class="form-card-header">
+                <div class="form-card-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div>
+                  <div class="form-card-title">Team Members</div>
+                  <div class="form-card-sub">
+                    Add your teammates by name and assign roles
+                  </div>
+                </div>
+              </div>
+              <div class="form-card-body">
+                <div class="field-group">
+                  <label class="field-label">Add Member</label>
+                  <div class="member-add-row">
+                    <input
+                      type="text"
+                      id="memberNameInput"
+                      class="field-input"
+                      placeholder="Full name (e.g. Umut İleri)"
+                      onkeypress="if (event.key === 'Enter') addMember();"
+                    />
+                    <button class="member-add-btn" onclick="addMember()">
+                      <i class="bi bi-plus-lg"></i> Add
+                    </button>
+                  </div>
+                  <div class="field-hint">
+                    Press Enter or click Add to include a member.
+                  </div>
+                </div>
+
+                <div class="member-list" id="memberList"></div>
+              </div>
+              <div class="form-actions">
+                <button class="btn-back" onclick="goToStep(1)">
+                  <i class="bi bi-arrow-left"></i> Back
+                </button>
+                <button class="btn-next" onclick="goToStep(3)">
+                  Next: Milestones <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-panel" id="step3">
+            <div class="form-card">
+              <div class="form-card-header">
+                <div class="form-card-icon">
+                  <i class="bi bi-flag-fill"></i>
+                </div>
+                <div>
+                  <div class="form-card-title">Milestones</div>
+                  <div class="form-card-sub">
+                    Define key delivery points for your project
+                  </div>
+                </div>
+              </div>
+              <div class="form-card-body">
+                <div class="field-group">
+                  <label class="field-label">Add Milestone</label>
+                  <div class="field-grid" style="margin-bottom: 10px">
+                    <input
+                      type="text"
+                      id="milestoneTitle"
+                      class="field-input"
+                      placeholder="e.g. M1: Frontend Design"
+                    />
+                    <input type="date" id="milestoneDate" class="field-input" />
+                  </div>
+                  <button
+                    class="member-add-btn"
+                    onclick="addMilestone()"
+                    style="width: 100%; justify-content: center"
+                  >
+                    <i class="bi bi-plus-lg"></i> Add Milestone
+                  </button>
+                </div>
+
+                <div class="milestone-list" id="milestoneList"></div>
+              </div>
+              <div class="form-actions">
+                <button class="btn-back" onclick="goToStep(2)">
+                  <i class="bi bi-arrow-left"></i> Back
+                </button>
+                <button class="btn-create" onclick="createProject()">
+                  <i class="bi bi-rocket-takeoff-fill"></i> Create Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="preview-card">
+            <div class="preview-title-label">Live Preview</div>
+            <div
+              class="preview-project-color"
+              id="previewIcon"
+              style="background: #f97316"
+            >
+              🚀
+            </div>
+            <div class="preview-name" id="previewName">Project Name</div>
+            <div class="preview-desc" id="previewDesc">
+              Your project description will appear here...
+            </div>
+
+            <div class="preview-divider"></div>
+
+            <div class="preview-stat">
+              <span class="preview-stat-label">Course</span>
+              <span class="preview-stat-value" id="previewCourse">—</span>
+            </div>
+            <div class="preview-stat">
+              <span class="preview-stat-label">Type</span>
+              <span class="preview-stat-value" id="previewType">—</span>
+            </div>
+            <div class="preview-stat">
+              <span class="preview-stat-label">Deadline</span>
+              <span class="preview-stat-value" id="previewDeadline">—</span>
+            </div>
+            <div class="preview-stat">
+              <span class="preview-stat-label">Members</span>
+              <span class="preview-stat-value" id="previewMemberCount">1</span>
+            </div>
+            <div class="preview-stat">
+              <span class="preview-stat-label">Milestones</span>
+              <span class="preview-stat-value" id="previewMilestoneCount"
+                >0</span
+              >
+            </div>
+
+            <div class="preview-divider"></div>
+
+            <div class="preview-stat-label" style="margin-bottom: 8px">
+              Team
+            </div>
+            <div class="preview-members-row" id="previewMembers"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="success-overlay" id="successOverlay">
+      <div class="success-card">
+        <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+        <div class="success-title">Project Created! 🎉</div>
+        <div class="success-sub" id="successMsg">
+          Your project has been saved successfully.
+        </div>
+        <button
+          class="btn-go-dashboard"
+          onclick="window.location.href = 'projects-page.html'"
+        >
+          <i class="bi bi-arrow-right me-2"></i>Go to Projects
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer-dark mt-4">
+      <div class="container text-center">
+        <small>&copy; 2026 Puer Management | CEIT 435</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const isLoggedIn = localStorage.getItem("puer_logged_in");
+        const userName = localStorage.getItem("puer_user_name");
+        if (isLoggedIn !== "true" || !userName) {
+          window.location.href = "login.html";
+          return;
+        }
+        document.getElementById("dropdown-user-name").textContent = userName;
+
+        addMemberToList(userName, true);
+        updatePreview();
+      });
+
+      let selectedColor = "#f97316";
+      let selectedEmoji = "🚀";
+      let members = [];
+      let milestones = [];
+
+      function goToStep(step) {
+        if (
+          step === 2 &&
+          !document.getElementById("projectName").value.trim()
+        ) {
+          alert("Please enter a project name first.");
+          return;
+        }
+
+        document
+          .querySelectorAll(".step-panel")
+          .forEach((p) => p.classList.remove("active"));
+        document.getElementById("step" + step).classList.add("active");
+
+        for (let i = 1; i <= 3; i++) {
+          const ind = document.getElementById("stepIndicator" + i);
+          ind.classList.remove("active", "done");
+          if (i < step) ind.classList.add("done");
+          if (i === step) ind.classList.add("active");
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function selectColor(el) {
+        document
+          .querySelectorAll(".color-opt")
+          .forEach((c) => c.classList.remove("selected"));
+        el.classList.add("selected");
+        selectedColor = el.dataset.color;
+        document.getElementById("previewIcon").style.background = selectedColor;
+      }
+
+      function selectEmoji(el) {
+        document
+          .querySelectorAll(".emoji-opt")
+          .forEach((e) => e.classList.remove("selected"));
+        el.classList.add("selected");
+        selectedEmoji = el.dataset.emoji;
+        document.getElementById("previewIcon").textContent = selectedEmoji;
+      }
+
+      function updatePreview() {
+        const name = document.getElementById("projectName").value.trim();
+        const desc = document.getElementById("projectDesc").value.trim();
+        const course = document.getElementById("projectCourse").value.trim();
+        const type = document.getElementById("projectType").value;
+        const deadline = document.getElementById("projectDeadline").value;
+
+        document.getElementById("previewName").textContent =
+          name || "Project Name";
+        document.getElementById("previewDesc").textContent =
+          desc || "Your project description will appear here...";
+        document.getElementById("previewCourse").textContent = course || "—";
+        document.getElementById("previewType").textContent = type || "—";
+        document.getElementById("previewDeadline").textContent = deadline
+          ? new Date(deadline).toLocaleDateString("en-GB", {
+              day: "2-digit",
+              month: "short",
+              year: "numeric",
+            })
+          : "—";
+      }
+
+      function updateMemberPreview() {
+        const container = document.getElementById("previewMembers");
+        const count = document.getElementById("previewMemberCount");
+        container.innerHTML = "";
+        count.textContent = members.length;
+        members.slice(0, 6).forEach((m) => {
+          const div = document.createElement("div");
+          div.className = "preview-member-avatar";
+          div.title = m.name;
+          div.textContent = m.name
+            .split(" ")
+            .map((w) => w[0])
+            .join("")
+            .slice(0, 2)
+            .toUpperCase();
+          container.appendChild(div);
+        });
+        if (members.length > 6) {
+          const div = document.createElement("div");
+          div.className = "preview-member-avatar";
+          div.style.background = "#64748b";
+          div.textContent = "+" + (members.length - 6);
+          container.appendChild(div);
+        }
+      }
+
+      function addMember() {
+        const input = document.getElementById("memberNameInput");
+        const name = input.value.trim();
+        if (!name) return;
+        addMemberToList(name, false);
+        input.value = "";
+        input.focus();
+      }
+
+      function addMemberToList(name, isYou) {
+        if (members.find((m) => m.name.toLowerCase() === name.toLowerCase()))
+          return;
+        members.push({ name, role: "Core Member" });
+        renderMembers();
+        updateMemberPreview();
+      }
+
+      function removeMember(index) {
+        if (index === 0) return;
+        members.splice(index, 1);
+        renderMembers();
+        updateMemberPreview();
+      }
+
+      function renderMembers() {
+        const list = document.getElementById("memberList");
+        list.innerHTML = "";
+        members.forEach((m, i) => {
+          const div = document.createElement("div");
+          div.className = "member-item";
+          const initials = m.name
+            .split(" ")
+            .map((w) => w[0])
+            .join("")
+            .slice(0, 2)
+            .toUpperCase();
+          div.innerHTML = `
+            <div class="member-avatar">${initials}</div>
+            <div class="member-info">
+              <div class="member-name">${m.name}</div>
+              <div class="member-email">Team member</div>
+            </div>
+            <select class="member-role-select" onchange="members[${i}].role=this.value">
+              <option ${m.role === "Core Member" ? "selected" : ""}>Core Member</option>
+              <option ${m.role === "Lead Member" ? "selected" : ""}>Lead Member</option>
+              <option ${m.role === "Support Member" ? "selected" : ""}>Support Member</option>
+            </select>
+            ${
+              i === 0
+                ? '<span class="member-you-badge">You</span>'
+                : `<button class="member-remove-btn" onclick="removeMember(${i})"><i class="bi bi-x-lg"></i></button>`
+            }
+          `;
+          list.appendChild(div);
+        });
+      }
+
+      function addMilestone() {
+        const title = document.getElementById("milestoneTitle").value.trim();
+        const date = document.getElementById("milestoneDate").value;
+        if (!title) return alert("Please enter a milestone title.");
+        milestones.push({ title, date });
+        document.getElementById("milestoneTitle").value = "";
+        document.getElementById("milestoneDate").value = "";
+        renderMilestones();
+        document.getElementById("previewMilestoneCount").textContent =
+          milestones.length;
+      }
+
+      function removeMilestone(index) {
+        milestones.splice(index, 1);
+        renderMilestones();
+        document.getElementById("previewMilestoneCount").textContent =
+          milestones.length;
+      }
+
+      function renderMilestones() {
+        const list = document.getElementById("milestoneList");
+        list.innerHTML = "";
+        milestones.forEach((m, i) => {
+          const div = document.createElement("div");
+          div.className = "milestone-item";
+          div.innerHTML = `
+            <div class="milestone-dot"></div>
+            <div class="milestone-title">${m.title}</div>
+            <div class="milestone-date">${m.date ? new Date(m.date).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }) : "No date"}</div>
+            <button class="member-remove-btn" onclick="removeMilestone(${i})"><i class="bi bi-x-lg"></i></button>
+          `;
+          list.appendChild(div);
+        });
+      }
+
+      function createProject() {
+        const name = document.getElementById("projectName").value.trim();
+        if (!name) {
+          goToStep(1);
+          alert("Please enter a project name.");
+          return;
+        }
+
+        const project = {
+          id: Date.now(),
+          name,
+          course: document.getElementById("projectCourse").value.trim(),
+          desc: document.getElementById("projectDesc").value.trim(),
+          type: document.getElementById("projectType").value,
+          visibility: document.getElementById("projectVisibility").value,
+          deadline: document.getElementById("projectDeadline").value,
+          color: selectedColor,
+          emoji: selectedEmoji,
+          members,
+          milestones,
+          createdAt: new Date().toISOString(),
+          progress: 0,
+        };
+
+        const existing = JSON.parse(
+          localStorage.getItem("puer_projects") || "[]",
+        );
+        existing.push(project);
+        localStorage.setItem("puer_projects", JSON.stringify(existing));
+
+        document.getElementById("successMsg").textContent =
+          `"${name}" has been created with ${members.length} member(s) and ${milestones.length} milestone(s).`;
+        document.getElementById("successOverlay").classList.add("show");
+      }
+    </script>
+    <script src="dark.js"></script>
+  </body>
+</html>
