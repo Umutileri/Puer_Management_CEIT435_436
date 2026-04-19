@@ -1,28 +1,22 @@
 # 📚 Puer Management – CEIT 435 / CEIT 436 Project
 
+> ⚠️ Major Update: The entire user interface has been fully redesigned with a modern, scalable, and user-centered approach.
+
+---
+
 ## ✨ Project Summary
-[Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨
+
+[Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨  
+
 Puer Management is a platform for **project management and fair peer evaluation** designed for university student groups and instructors. It aims to transparently track project progress and evaluate team members' contributions using an objective, data-driven system.
 
-**Core Goal:** To eliminate ambiguity in project management and ensure that every team member's contribution is scored fairly.
+**Core Goal:**  
+To eliminate ambiguity in project management and ensure that every team member's contribution is scored fairly.
 
 ---
 
-## 💻 Technologies Used
+## 🚀 Key Features
 
-This project has been developed using purely **static frontend** technologies to provide a modern and responsive user experience.
-
-| Category | Technology | Description |
-| :--- | :--- | :--- |
-| **Structure** | **HTML5** | Used to create the structure and content of all web pages. |
-| **Styling** | **CSS3** | Used for custom styling and layout adjustments. |
-| **Framework** | **Bootstrap 5.3** | Employed for fast design, professional appearance, and ensuring responsiveness using pre-built components. |
-| **Interactivity** | **JavaScript** | Used for the functionality of Bootstrap components (e.g., toggling navigation, tab switching) and simple UI interactions. |
-| **Icons** | **Bootstrap Icons** | The icon set used for visual symbols across the interface. |
-
----
-
-> ⚠️ Major Update: The entire user interface has been fully redesigned with a modern, scalable, and user-centered approach.
 ### 📊 Dashboard
 - Overview of active projects, completed tasks, and pending evaluations  
 - Weekly contribution tracking  
@@ -51,6 +45,20 @@ This project has been developed using purely **static frontend** technologies to
 
 ---
 
+## 💻 Technologies Used
+
+This project is built using modern frontend technologies to deliver a responsive and user-friendly experience.
+
+| Category | Technology | Description |
+|--------|----------|------------|
+| Structure | HTML5 | Page structure and content |
+| Styling | CSS3 | Custom styling and layout |
+| Framework | Bootstrap 5.3 | Responsive design system |
+| Interactivity | JavaScript | UI interactions and theme switching |
+| Icons | Bootstrap Icons | Icon system |
+
+---
+
 ## 🎨 UI/UX Improvements & Enhancements
 
 The most significant progress in this version is the **complete redesign of the user interface**.  
@@ -59,27 +67,15 @@ The entire frontend structure was rebuilt to create a more modern, consistent, a
 ---
 
 ### 🔹 System-Wide UI Redesign
-
-All core pages were redesigned:
-
-- Dashboard  
-- Projects Page  
-- Evaluation Page  
-- Profile Page  
-- Login & Register  
-
-Improvements include:
+- All core pages redesigned (Dashboard, Projects, Evaluation, Profile, Auth pages)  
 - Modern card-based layout  
-- Better spacing and typography  
+- Improved spacing and typography  
 - Clear visual hierarchy  
-- Improved usability and readability  
+- Enhanced usability and readability  
 
 ---
 
 ### 🌙 Dark Mode Support
-
-A fully functional **Dark Mode** feature was implemented:
-
 - Light / Dark theme switching  
 - Consistent styling across all pages  
 - Improved usability for long sessions  
@@ -87,34 +83,24 @@ A fully functional **Dark Mode** feature was implemented:
 ---
 
 ### ➕ Project Creation Feature
-
-A new **Create Project** interface was added:
-
-- Users can initiate new projects  
-- Task structure can be defined  
-- Designed to support future backend integration  
+- Users can create and structure new projects  
+- Task definitions and workflow preparation  
+- Ready for backend integration  
 
 ---
 
-### 🧩 UI Consistency & Component Structure
-
-- Unified design system across all pages  
+### 🧩 UI Consistency
+- Unified design system  
 - Reusable components  
-- Consistent spacing, colors, and layout  
-
-This ensures a seamless experience throughout the application.
+- Consistent layout and spacing  
 
 ---
 
 ### 🚀 Overall Impact
-
-The system has evolved from a basic interface into a:
+The system has evolved into a:
 
 - Modern  
 - Scalable  
 - User-centered  
 
-platform, ready for backend integration and advanced features.
-
----
-
+platform ready for future backend integration and advanced features.
