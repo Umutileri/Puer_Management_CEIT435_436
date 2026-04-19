@@ -1,7 +1,7 @@
-# 📚 Puer Management
+# 📚 Puer Management – CEIT 435 / CEIT 436 Project
 
 ## ✨ Project Summary
-[Visit Live Demo](https://umutileri.github.io/Puer_Proje_Website_LayoutV1/) ✨
+[Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨
 Puer Management is a platform for **project management and fair peer evaluation** designed for university student groups and instructors. It aims to transparently track project progress and evaluate team members' contributions using an objective, data-driven system.
 
 **Core Goal:** To eliminate ambiguity in project management and ensure that every team member's contribution is scored fairly.
