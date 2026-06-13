@@ -1,54 +1,106 @@
 # 📚 Puer Management – CEIT 435 / CEIT 436 Project
 
-## ✨ Project Summary
-[Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨
-Puer Management is a platform for **project management and fair peer evaluation** designed for university student groups and instructors. It aims to transparently track project progress and evaluate team members' contributions using an objective, data-driven system.
-
-**Core Goal:** To eliminate ambiguity in project management and ensure that every team member's contribution is scored fairly.
+> ⚠️ Major Update: The entire user interface has been fully redesigned with a modern, scalable, and user-centered approach.
 
 ---
 
-## 🚀 Key Features (Frontend View)
+## ✨ Project Summary
 
-This version (V1) provides the static visual representation of the final user interface (UI) and core interaction points.
+[Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨  
 
-* **Dashboard:** An overview page that allows the user to instantly see their active projects, completed tasks, pending evaluations, and recent group activity.
-* **Account Settings:** A tabbed interface where users can edit their personal details (Name), change their password, and view individual contribution metrics.
-    * Contribution metrics include the task completion rate and a summary of peer evaluations.
-* **Navigation Bar:** Quick access to the Dashboard, Projects, and Evaluation pages.
-* **Authentication Pages:** Forms for user login (`login.html`) and new account creation (`register.html`).
-* **Landing Page:** An informative page showcasing the application's key features and Frequently Asked Questions (FAQ).
+Puer Management is a platform for **project management and fair peer evaluation** designed for university student groups and instructors. It aims to transparently track project progress and evaluate team members' contributions using an objective, data-driven system.
+
+**Core Goal:**  
+To eliminate ambiguity in project management and ensure that every team member's contribution is scored fairly.
+
+---
+
+## 🚀 Key Features
+
+### 📊 Dashboard
+- Overview of active projects, completed tasks, and pending evaluations  
+- Weekly contribution tracking  
+- Recent group activity feed  
+
+### 📁 Projects Page (Project Roadmap)
+- Task tracking and progress visualization  
+- Milestone-based structure  
+- Interactive task management UI  
+
+### 📝 Evaluation System
+- Peer evaluation interface  
+- Rating system for teammates  
+- Feedback submission area  
+
+### 👤 Profile Page
+- User contribution statistics  
+- Completed task tracking  
+- Peer score visualization  
+- Skills overview  
+
+### 🔐 Authentication Pages
+- Login system  
+- Registration page  
+- Clean and user-friendly form design  
 
 ---
 
 ## 💻 Technologies Used
 
-This project has been developed using purely **static frontend** technologies to provide a modern and responsive user experience.
+This project is built using modern frontend technologies to deliver a responsive and user-friendly experience.
 
 | Category | Technology | Description |
-| :--- | :--- | :--- |
-| **Structure** | **HTML5** | Used to create the structure and content of all web pages. |
-| **Styling** | **CSS3** | Used for custom styling and layout adjustments. |
-| **Framework** | **Bootstrap 5.3** | Employed for fast design, professional appearance, and ensuring responsiveness using pre-built components. |
-| **Interactivity** | **JavaScript** | Used for the functionality of Bootstrap components (e.g., toggling navigation, tab switching) and simple UI interactions. |
-| **Icons** | **Bootstrap Icons** | The icon set used for visual symbols across the interface. |
+|--------|----------|------------|
+| Structure | HTML5 | Page structure and content |
+| Styling | CSS3 | Custom styling and layout |
+| Framework | Bootstrap 5.3 | Responsive design system |
+| Interactivity | JavaScript | UI interactions and theme switching |
+| Icons | Bootstrap Icons | Icon system |
 
 ---
 
-## 🚧 Version Note (V1 - Static Frontend)
+## 🎨 UI/UX Improvements & Enhancements
 
-**Important Note:** The files in this repository represent the **V1 static frontend view** of the Puer Management application.
-
-* These pages focus only on the design, layout, and responsiveness of the user interface.
-* The current version **does not include any Backend, Database (PostgreSQL), or Python Flask** integration. Form submissions or button clicks are only simulated via static page navigation.
-* Backend and API connections will be integrated in future releases.
+The most significant progress in this version is the **complete redesign of the user interface**.  
+The entire frontend structure was rebuilt to create a more modern, consistent, and scalable system.
 
 ---
 
-## 🔮 Future Roadmap (Next Steps)
+### 🔹 System-Wide UI Redesign
+- All core pages redesigned (Dashboard, Projects, Evaluation, Profile, Auth pages)  
+- Modern card-based layout  
+- Improved spacing and typography  
+- Clear visual hierarchy  
+- Enhanced usability and readability  
 
-The following features and integrations are planned for V2 and beyond:
+---
 
-* **Backend Integration:** Connecting the frontend forms and dashboards to the Flask API and PostgreSQL database.
-* **Projects/Tasks Page:** Implementing the dynamic Kanban-style task board and task assignment interface.
-* **JavaScript Logic:** Adding core application logic, including dynamic data fetching and progress bar updates based on API responses.
+### 🌙 Dark Mode Support
+- Light / Dark theme switching  
+- Consistent styling across all pages  
+- Improved usability for long sessions  
+
+---
+
+### ➕ Project Creation Feature
+- Users can create and structure new projects  
+- Task definitions and workflow preparation  
+- Ready for backend integration  
+
+---
+
+### 🧩 UI Consistency
+- Unified design system  
+- Reusable components  
+- Consistent layout and spacing  
+
+---
+
+### 🚀 Overall Impact
+The system has evolved into a:
+
+- Modern  
+- Scalable  
+- User-centered  
+
+platform ready for future backend integration and advanced features.
