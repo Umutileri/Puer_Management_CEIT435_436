@@ -7,6 +7,7 @@
 ## ✨ Project Summary
 
 [Visit Live Demo](https://umutileri.github.io/Puer_Management_CEIT435_436/) ✨  
+[Visit One Page Final Versin](https://umutileri.github.io/PuerManagement-One-Page-Web-Final/) 🎉
 
 Puer Management is a platform for **project management and fair peer evaluation** designed for university student groups and instructors. It aims to transparently track project progress and evaluate team members' contributions using an objective, data-driven system.
 
