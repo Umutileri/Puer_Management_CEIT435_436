@@ -1,0 +1,1341 @@
+{
+  "projects": [
+    {
+      "id": "3dwy8ib",
+      "title": "Deneme",
+      "description": "Design and create effective classroom learning aids.",
+      "ownerId": "me",
+      "members": [
+        "me"
+      ],
+      "columns": [
+        {
+          "id": "xxdzwnq",
+          "title": "Brainstorming",
+          "order": 0
+        },
+        {
+          "id": "po7sz5t",
+          "title": "Resource Gathering",
+          "order": 1
+        },
+        {
+          "id": "xs5wohv",
+          "title": "Design & Prototype",
+          "order": 2
+        },
+        {
+          "id": "gbahbbo",
+          "title": "Review",
+          "order": 3
+        },
+        {
+          "id": "nszcbax",
+          "title": "Production",
+          "order": 4
+        }
+      ],
+      "templateId": "instructional-material",
+      "createdAt": "2026-05-01T12:21:46.244Z"
+    },
+    {
+      "id": "0iw886s",
+      "title": "Deneme2",
+      "description": "Track your teaching performance and observations during internship.",
+      "ownerId": "me",
+      "members": [
+        "me"
+      ],
+      "columns": [
+        {
+          "id": "hsf3orv",
+          "title": "Log Entries",
+          "order": 0
+        },
+        {
+          "id": "ksopctr",
+          "title": "Observation Notes",
+          "order": 1
+        },
+        {
+          "id": "qd6uix5",
+          "title": "Supervisor Feedback",
+          "order": 2
+        },
+        {
+          "id": "npais5y",
+          "title": "Self-Reflection",
+          "order": 3
+        },
+        {
+          "id": "miub54p",
+          "title": "Final Portfolio",
+          "order": 4
+        }
+      ],
+      "templateId": "practicum-tracking",
+      "createdAt": "2026-05-01T12:24:29.098Z"
+    },
+    {
+      "id": "gix3uqk",
+      "title": "Deneme 3",
+      "description": "Systematic approach to planning high-quality lessons.",
+      "ownerId": "me",
+      "members": [
+        "me"
+      ],
+      "columns": [
+        {
+          "id": "dmjst03",
+          "title": "Concept",
+          "order": 0
+        },
+        {
+          "id": "5hhy1j5",
+          "title": "Drafting Plan",
+          "order": 1
+        },
+        {
+          "id": "j2rp0ok",
+          "title": "Resource Prep",
+          "order": 2
+        },
+        {
+          "id": "vwwea0r",
+          "title": "Final Polish",
+          "order": 3
+        },
+        {
+          "id": "6n0v67s",
+          "title": "Implemented",
+          "order": 4
+        }
+      ],
+      "templateId": "lesson-plan-workflow",
+      "createdAt": "2026-05-01T12:24:35.773Z"
+    },
+    {
+      "id": "r56jgvw",
+      "title": "Dasdfa",
+      "description": "Track your teaching performance and observations during internship.",
+      "ownerId": "me",
+      "members": [
+        "me"
+      ],
+      "columns": [
+        {
+          "id": "r84n2gl",
+          "title": "Log Entries",
+          "order": 0
+        },
+        {
+          "id": "0ivd6fu",
+          "title": "Observation Notes",
+          "order": 1
+        },
+        {
+          "id": "lc3mhr6",
+          "title": "Supervisor Feedback",
+          "order": 2
+        },
+        {
+          "id": "orjuxn7",
+          "title": "Self-Reflection",
+          "order": 3
+        },
+        {
+          "id": "epgebz2",
+          "title": "Final Portfolio",
+          "order": 4
+        }
+      ],
+      "templateId": "practicum-tracking",
+      "createdAt": "2026-05-01T12:24:41.302Z"
+    },
+    {
+      "id": "uxoom5i",
+      "title": "ASDasfdaf",
+      "description": "Structured reports on student achievement and feedback.",
+      "ownerId": "me",
+      "members": [
+        "me"
+      ],
+      "columns": [
+        {
+          "id": "b7ni2or",
+          "title": "Data Input",
+          "order": 0
+        },
+        {
+          "id": "c7hxy73",
+          "title": "Statistical Analysis",
+          "order": 1
+        },
+        {
+          "id": "abh11hl",
+          "title": "Qualitative Feedback",
+          "order": 2
+        },
+        {
+          "id": "l5uz613",
+          "title": "Final Report",
+          "order": 3
+        },
+        {
+          "id": "w1jp3ao",
+          "title": "Communicated",
+          "order": 4
+        }
+      ],
+      "templateId": "assessment-report",
+      "createdAt": "2026-05-01T12:24:47.247Z"
+    },
+    {
+      "id": "basv65e",
+      "title": "asdasd",
+      "description": "Track your teaching performance and observations during internship.",
+      "ownerId": "umutileri0667@gmail.com",
+      "members": [],
+      "columns": [
+        {
+          "id": "vz5qbla",
+          "title": "Log Entries",
+          "order": 0
+        },
+        {
+          "id": "qhg21rh",
+          "title": "Observation Notes",
+          "order": 1
+        },
+        {
+          "id": "q6kreyk",
+          "title": "Supervisor Feedback",
+          "order": 2
+        },
+        {
+          "id": "8khndjw",
+          "title": "Self-Reflection",
+          "order": 3
+        },
+        {
+          "id": "cy0eb5y",
+          "title": "Final Portfolio",
+          "order": 4
+        }
+      ],
+      "templateId": "practicum-tracking",
+      "createdAt": "2026-06-13T18:49:36.297Z"
+    },
+    {
+      "id": "o3ixew5",
+      "title": "Group Projects",
+      "description": "Agile-style sprint board for coding projects with backlog, development, and QA phases.",
+      "ownerId": "Umut@gmail.com",
+      "members": [],
+      "columns": [
+        {
+          "id": "b4xf0l9",
+          "title": "Backlog",
+          "order": 0
+        },
+        {
+          "id": "mnytb29",
+          "title": "In Development",
+          "order": 1
+        },
+        {
+          "id": "m759rzn",
+          "title": "Code Review",
+          "order": 2
+        },
+        {
+          "id": "yyc85b6",
+          "title": "Testing",
+          "order": 3
+        },
+        {
+          "id": "20e9k4w",
+          "title": "Done",
+          "order": 4
+        }
+      ],
+      "templateId": "software-sprint",
+      "createdAt": "2026-06-13T19:46:40.737Z"
+    },
+    {
+      "id": "hl7v8py",
+      "title": "ADDIE Model",
+      "description": "Full ADDIE-model workflow for designing instructional interventions from analysis to evaluation.",
+      "ownerId": "doruk@puer.com",
+      "members": [],
+      "columns": [
+        {
+          "id": "as07mby",
+          "title": "Analysis",
+          "order": 0
+        },
+        {
+          "id": "40xsocb",
+          "title": "Learning Objectives",
+          "order": 1
+        },
+        {
+          "id": "bdofbxw",
+          "title": "Design Strategy",
+          "order": 2
+        },
+        {
+          "id": "h4rje9n",
+          "title": "Development",
+          "order": 3
+        },
+        {
+          "id": "qqw7rqt",
+          "title": "Implementation Plan",
+          "order": 4
+        },
+        {
+          "id": "rqk94fh",
+          "title": "Evaluation",
+          "order": 5
+        }
+      ],
+      "templateId": "instructional-design-addie",
+      "createdAt": "2026-06-15T18:32:41.180Z"
+    },
+    {
+      "id": "0v8k199",
+      "title": "sdfhfdsh",
+      "description": "Build a complete online course from planning through content production to LMS publishing.",
+      "ownerId": "dorukalp@puer.com",
+      "members": [
+        {
+          "email": "boran@puer.com",
+          "role": "viewer"
+        }
+      ],
+      "columns": [
+        {
+          "id": "1ynhooc",
+          "title": "Course Planning",
+          "order": 0
+        },
+        {
+          "id": "qlyzrj6",
+          "title": "Storyboard",
+          "order": 1
+        },
+        {
+          "id": "j31zuuz",
+          "title": "Content Production",
+          "order": 2
+        },
+        {
+          "id": "29j6iwm",
+          "title": "Interaction Design",
+          "order": 3
+        },
+        {
+          "id": "2c7ez9v",
+          "title": "Assessment",
+          "order": 4
+        },
+        {
+          "id": "9k1m5bd",
+          "title": "Publishing & Testing",
+          "order": 5
+        }
+      ],
+      "templateId": "elearning-course",
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "buw60y2",
+      "projectId": "3dwy8ib",
+      "columnId": "xxdzwnq",
+      "title": "Define learning objectives",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:21:46.244Z"
+    },
+    {
+      "id": "or1uoe5",
+      "projectId": "3dwy8ib",
+      "columnId": "xxdzwnq",
+      "title": "Research visual aids",
+      "tags": [
+        "Research"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:21:46.244Z"
+    },
+    {
+      "id": "6e73nah",
+      "projectId": "3dwy8ib",
+      "columnId": "xxdzwnq",
+      "title": "Create user guide for materials",
+      "tags": [
+        "Documentation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:21:46.244Z"
+    },
+    {
+      "projectId": "3dwy8ib",
+      "columnId": "po7sz5t",
+      "title": "New Task",
+      "tags": [
+        "Draft",
+        "asdasd"
+      ],
+      "subtasks": [
+        {
+          "id": "d8awh",
+          "title": "sdfgdfg",
+          "completed": true
+        }
+      ],
+      "id": "7m6lxbz",
+      "createdAt": "2026-05-01T12:21:49.011Z",
+      "description": "sfd",
+      "deadline": "2026-06-09T21:00:00.000Z"
+    },
+    {
+      "projectId": "3dwy8ib",
+      "columnId": "xs5wohv",
+      "title": "New Task",
+      "tags": [
+        "Draft"
+      ],
+      "subtasks": [],
+      "id": "o7j5o6n",
+      "createdAt": "2026-05-01T12:21:50.879Z"
+    },
+    {
+      "id": "pbaar89",
+      "projectId": "0iw886s",
+      "columnId": "hsf3orv",
+      "title": "First classroom observation",
+      "tags": [
+        "Observation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:29.098Z"
+    },
+    {
+      "id": "yd947as",
+      "projectId": "0iw886s",
+      "columnId": "hsf3orv",
+      "title": "Set weekly teaching goals",
+      "tags": [
+        "Self-Improvement"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:29.098Z"
+    },
+    {
+      "id": "mp17jq3",
+      "projectId": "gix3uqk",
+      "columnId": "dmjst03",
+      "title": "Select curriculum topic",
+      "tags": [
+        "Alignment"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:35.773Z"
+    },
+    {
+      "id": "rlge8xj",
+      "projectId": "gix3uqk",
+      "columnId": "dmjst03",
+      "title": "Draft assessment matching objectives",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:35.773Z"
+    },
+    {
+      "id": "6i93huw",
+      "projectId": "r56jgvw",
+      "columnId": "r84n2gl",
+      "title": "First classroom observation",
+      "tags": [
+        "Observation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:41.302Z"
+    },
+    {
+      "id": "ge9bqed",
+      "projectId": "r56jgvw",
+      "columnId": "r84n2gl",
+      "title": "Set weekly teaching goals",
+      "tags": [
+        "Self-Improvement"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:41.302Z"
+    },
+    {
+      "id": "8yv1x8k",
+      "projectId": "uxoom5i",
+      "columnId": "b7ni2or",
+      "title": "Input test scores",
+      "tags": [
+        "Data Entry"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:47.247Z"
+    },
+    {
+      "id": "7a08bae",
+      "projectId": "uxoom5i",
+      "columnId": "b7ni2or",
+      "title": "Summarize group performance",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-05-01T12:24:47.247Z"
+    },
+    {
+      "projectId": "0iw886s",
+      "columnId": "ksopctr",
+      "title": "New Task",
+      "tags": [
+        "Draft"
+      ],
+      "subtasks": [],
+      "id": "9jisyok",
+      "createdAt": "2026-05-01T12:26:13.344Z"
+    },
+    {
+      "projectId": "0iw886s",
+      "columnId": "ksopctr",
+      "title": "New Task",
+      "tags": [
+        "Draft"
+      ],
+      "subtasks": [],
+      "id": "jod2i1c",
+      "createdAt": "2026-05-01T12:26:15.439Z"
+    },
+    {
+      "id": "db8d5ob",
+      "projectId": "basv65e",
+      "columnId": "vz5qbla",
+      "title": "First classroom observation",
+      "tags": [
+        "Observation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-13T18:49:36.297Z"
+    },
+    {
+      "id": "3d7oezb",
+      "projectId": "basv65e",
+      "columnId": "vz5qbla",
+      "title": "Set weekly teaching goals",
+      "tags": [
+        "Self-Improvement"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-13T18:49:36.297Z"
+    },
+    {
+      "projectId": "basv65e",
+      "columnId": "qhg21rh",
+      "title": "New Task",
+      "tags": [
+        "Draft"
+      ],
+      "subtasks": [],
+      "id": "arko90v",
+      "createdAt": "2026-06-13T18:49:48.476Z"
+    },
+    {
+      "id": "hfyomvu",
+      "projectId": "o3ixew5",
+      "columnId": "b4xf0l9",
+      "title": "Define MVP features",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-13T19:46:40.737Z"
+    },
+    {
+      "id": "lpiibjc",
+      "projectId": "o3ixew5",
+      "columnId": "b4xf0l9",
+      "title": "Set up repository and environment",
+      "tags": [
+        "Setup"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-13T19:46:40.737Z"
+    },
+    {
+      "id": "4tbg52h",
+      "projectId": "o3ixew5",
+      "columnId": "b4xf0l9",
+      "title": "Create initial task breakdown",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-13T19:46:40.737Z"
+    },
+    {
+      "projectId": "o3ixew5",
+      "columnId": "m759rzn",
+      "title": "New Task",
+      "tags": [
+        "Draft",
+        "Task1"
+      ],
+      "subtasks": [],
+      "id": "6gh6jig",
+      "createdAt": "2026-06-13T19:46:54.033Z",
+      "assigneeId": "umutileri",
+      "description": "Umut Bunu yapacakin. Unutma SAKİNNN!!!!!!!!!1",
+      "deadline": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "projectId": "o3ixew5",
+      "columnId": "mnytb29",
+      "title": "New Task",
+      "tags": [
+        "Draft",
+        "asdasd"
+      ],
+      "subtasks": [
+        {
+          "id": "8oa7pm",
+          "title": "adadasdasdasd",
+          "completed": true
+        },
+        {
+          "id": "ph3lfa",
+          "title": "asdadasd",
+          "completed": true
+        }
+      ],
+      "id": "9zj9vy5",
+      "createdAt": "2026-06-13T19:47:41.470Z",
+      "description": "asdadasd",
+      "assigneeId": "adasdasd",
+      "deadline": "2026-06-17T00:00:00.000Z"
+    },
+    {
+      "id": "uoi5i81",
+      "projectId": "hl7v8py",
+      "columnId": "as07mby",
+      "title": "Conduct learner analysis",
+      "description": "Profile the target audience: demographics, prior knowledge, learning preferences.",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "s91jb0b",
+      "projectId": "hl7v8py",
+      "columnId": "as07mby",
+      "title": "Conduct needs analysis",
+      "description": "Identify the gap between current and desired performance.",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "6t5nbaa",
+      "projectId": "hl7v8py",
+      "columnId": "as07mby",
+      "title": "Analyze learning context",
+      "description": "Evaluate the environment where instruction will take place.",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "nlwysnz",
+      "projectId": "hl7v8py",
+      "columnId": "as07mby",
+      "title": "Define task / content analysis",
+      "description": "Break down the subject matter into teachable components.",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "1w7oqq8",
+      "projectId": "hl7v8py",
+      "columnId": "40xsocb",
+      "title": "Write measurable learning objectives",
+      "description": "Create objectives using Bloom's taxonomy with action verbs.",
+      "tags": [
+        "Objectives"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "z3fwp5o",
+      "projectId": "hl7v8py",
+      "columnId": "40xsocb",
+      "title": "Align objectives with assessment",
+      "description": "Ensure each objective has a corresponding assessment method.",
+      "tags": [
+        "Alignment"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "km7965f",
+      "projectId": "hl7v8py",
+      "columnId": "40xsocb",
+      "title": "Prioritize objectives by importance",
+      "description": "Rank objectives to guide content sequencing.",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "eee1set",
+      "projectId": "hl7v8py",
+      "columnId": "bdofbxw",
+      "title": "Select instructional strategies",
+      "description": "Choose methods: direct instruction, discovery, problem-based, etc.",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "npubv3v",
+      "projectId": "hl7v8py",
+      "columnId": "bdofbxw",
+      "title": "Design content sequencing",
+      "description": "Organize topics in logical order (simple to complex).",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "izxn2lp",
+      "projectId": "hl7v8py",
+      "columnId": "bdofbxw",
+      "title": "Plan learner interaction and engagement",
+      "description": "Design activities that promote active learning.",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "v8vz2v9",
+      "projectId": "hl7v8py",
+      "columnId": "bdofbxw",
+      "title": "Create storyboard / content outline",
+      "description": "Draft the detailed structure of instructional materials.",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "k7onfl7",
+      "projectId": "hl7v8py",
+      "columnId": "h4rje9n",
+      "title": "Develop instructional materials",
+      "description": "Create slides, handouts, or digital content.",
+      "tags": [
+        "Development"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "jf4h340",
+      "projectId": "hl7v8py",
+      "columnId": "h4rje9n",
+      "title": "Produce multimedia assets",
+      "description": "Record videos, create animations, or design infographics.",
+      "tags": [
+        "Media"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "kh2d9cl",
+      "projectId": "hl7v8py",
+      "columnId": "h4rje9n",
+      "title": "Build assessment instruments",
+      "description": "Create quizzes, rubrics, and performance tasks.",
+      "tags": [
+        "Assessment"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "yqu3rs0",
+      "projectId": "hl7v8py",
+      "columnId": "h4rje9n",
+      "title": "Conduct usability review",
+      "description": "Have peers test materials for clarity and usability.",
+      "tags": [
+        "Quality"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "mbyn56w",
+      "projectId": "hl7v8py",
+      "columnId": "qqw7rqt",
+      "title": "Prepare instructor guide",
+      "description": "Write facilitation notes and implementation instructions.",
+      "tags": [
+        "Documentation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "yxu35jh",
+      "projectId": "hl7v8py",
+      "columnId": "qqw7rqt",
+      "title": "Plan pilot implementation",
+      "description": "Schedule and prepare for a trial run with sample learners.",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "qwmjr2k",
+      "projectId": "hl7v8py",
+      "columnId": "rqk94fh",
+      "title": "Conduct formative evaluation",
+      "description": "Gather data during pilot to identify improvements.",
+      "tags": [
+        "Evaluation"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "x2ez1br",
+      "projectId": "hl7v8py",
+      "columnId": "rqk94fh",
+      "title": "Analyze evaluation data",
+      "description": "Review feedback and performance data from the pilot.",
+      "tags": [
+        "Analysis"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "8fqizre",
+      "projectId": "hl7v8py",
+      "columnId": "rqk94fh",
+      "title": "Write summative evaluation report",
+      "description": "Document overall effectiveness and recommendations.",
+      "tags": [
+        "Report"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "id": "ud3psvf",
+      "projectId": "hl7v8py",
+      "columnId": "rqk94fh",
+      "title": "Revise based on findings",
+      "description": "Make final improvements to materials and strategy.",
+      "tags": [
+        "Revision"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-06-15T18:32:41.181Z"
+    },
+    {
+      "projectId": "hl7v8py",
+      "columnId": "40xsocb",
+      "title": "New Task",
+      "tags": [
+        "Draft"
+      ],
+      "subtasks": [],
+      "id": "wy41k96",
+      "createdAt": "2026-06-15T18:32:47.499Z"
+    },
+    {
+      "id": "rqmr4cq",
+      "projectId": "0v8k199",
+      "columnId": "1ynhooc",
+      "title": "Define course goals and audience",
+      "description": "Clarify who the course is for and what they should learn.",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "d50nnha",
+      "projectId": "0v8k199",
+      "columnId": "1ynhooc",
+      "title": "Create module outline",
+      "description": "Break the course into modules with topics per module.",
+      "tags": [
+        "Planning"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "jsckx5v",
+      "projectId": "0v8k199",
+      "columnId": "1ynhooc",
+      "title": "Write learning outcomes per module",
+      "description": "Define measurable outcomes for each module.",
+      "tags": [
+        "Objectives"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "79halwf",
+      "projectId": "0v8k199",
+      "columnId": "1ynhooc",
+      "title": "Set up LMS structure",
+      "description": "Create the course shell in the LMS (Moodle, Canvas, etc.).",
+      "tags": [
+        "Setup"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "dtp2cdr",
+      "projectId": "0v8k199",
+      "columnId": "qlyzrj6",
+      "title": "Create storyboard for Module 1",
+      "description": "Design the screen-by-screen flow for the first module.",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "lrluha5",
+      "projectId": "0v8k199",
+      "columnId": "qlyzrj6",
+      "title": "Map content flow across modules",
+      "description": "Ensure logical progression between modules.",
+      "tags": [
+        "Design"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "nxuucs1",
+      "projectId": "0v8k199",
+      "columnId": "qlyzrj6",
+      "title": "Design navigation and UI layout",
+      "description": "Plan consistent navigation patterns for learners.",
+      "tags": [
+        "UX"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "wg76g1v",
+      "projectId": "0v8k199",
+      "columnId": "j31zuuz",
+      "title": "Record / source video content",
+      "description": "Create instructional videos or source existing ones.",
+      "tags": [
+        "Media"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "9oean4q",
+      "projectId": "0v8k199",
+      "columnId": "j31zuuz",
+      "title": "Create slide-based content",
+      "description": "Design presentation slides for each module.",
+      "tags": [
+        "Content"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "2an1unx",
+      "projectId": "0v8k199",
+      "columnId": "j31zuuz",
+      "title": "Prepare multimedia assets",
+      "description": "Create graphics, animations, and audio narrations.",
+      "tags": [
+        "Media"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "yzt3u4c",
+      "projectId": "0v8k199",
+      "columnId": "j31zuuz",
+      "title": "Write script / narration text",
+      "description": "Draft narration scripts for audio or video content.",
+      "tags": [
+        "Writing"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "ei1je87",
+      "projectId": "0v8k199",
+      "columnId": "29j6iwm",
+      "title": "Design interactive activities",
+      "description": "Create drag-and-drop, hotspot, or branching scenarios.",
+      "tags": [
+        "Interaction"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "qno8qqw",
+      "projectId": "0v8k199",
+      "columnId": "29j6iwm",
+      "title": "Build discussion prompts",
+      "description": "Create forum questions or peer interaction activities.",
+      "tags": [
+        "Engagement"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "j29gyv2",
+      "projectId": "0v8k199",
+      "columnId": "29j6iwm",
+      "title": "Add gamification elements",
+      "description": "Include badges, points, or progress tracking.",
+      "tags": [
+        "Engagement"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "drtcm6k",
+      "projectId": "0v8k199",
+      "columnId": "2c7ez9v",
+      "title": "Create quiz questions per module",
+      "description": "Write MCQ, true/false, and open-ended questions.",
+      "tags": [
+        "Assessment"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "pd6ie4x",
+      "projectId": "0v8k199",
+      "columnId": "2c7ez9v",
+      "title": "Design final assessment / project",
+      "description": "Create a capstone assignment or comprehensive exam.",
+      "tags": [
+        "Assessment"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "aaj2aot",
+      "projectId": "0v8k199",
+      "columnId": "2c7ez9v",
+      "title": "Set grading criteria",
+      "description": "Define rubrics and passing scores.",
+      "tags": [
+        "Assessment"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "muhfrfv",
+      "projectId": "0v8k199",
+      "columnId": "9k1m5bd",
+      "title": "Run accessibility check",
+      "description": "Verify WCAG compliance for all content.",
+      "tags": [
+        "Quality"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "u4ptgjk",
+      "projectId": "0v8k199",
+      "columnId": "9k1m5bd",
+      "title": "Test on multiple devices",
+      "description": "Verify content works on desktop, tablet, and mobile.",
+      "tags": [
+        "Testing"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    },
+    {
+      "id": "myqlbv2",
+      "projectId": "0v8k199",
+      "columnId": "9k1m5bd",
+      "title": "Publish and announce course",
+      "description": "Make the course live and notify enrolled learners.",
+      "tags": [
+        "Launch"
+      ],
+      "subtasks": [],
+      "isCompleted": false,
+      "completedByUserId": null,
+      "completedAt": null,
+      "createdAt": "2026-06-16T07:12:55.886Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "6dsuw",
+      "email": "doruk@puer.com",
+      "password": "1234",
+      "name": "Doruk"
+    },
+    {
+      "id": "foghzc",
+      "email": "dorukalp@puer.com",
+      "password": "1234",
+      "name": "Doruk Alp",
+      "firstName": "Doruk",
+      "lastName": "Alp",
+      "role": "",
+      "responsibilityArea": "",
+      "teamPosition": "",
+      "availability": "",
+      "bio": "",
+      "emailNotifications": true,
+      "showRole": true,
+      "publicVisibility": false,
+      "profileCompleted": true
+    },
+    {
+      "id": "vzg4l",
+      "email": "umutileri0667@gmail.com",
+      "password": "muammer2003",
+      "name": "umut ileri"
+    },
+    {
+      "id": "uvg8lj",
+      "email": "asdasd@gmail.com",
+      "password": "asdpasdasd",
+      "name": "Umut İleri"
+    },
+    {
+      "id": "pgicnt",
+      "email": "dsadas@gmail.com",
+      "password": "muammer2003",
+      "name": "asdasd"
+    },
+    {
+      "id": "06qdvd",
+      "email": "asdasasdasdd@gmail.com",
+      "password": "umut",
+      "name": "asdasd"
+    },
+    {
+      "id": "mpy00e",
+      "email": "gmail@gmail.com",
+      "password": "123456789",
+      "name": "umut ileri"
+    },
+    {
+      "id": "ft5k3",
+      "email": "aspodkasopdkasopd@gmail.com",
+      "password": "123",
+      "name": "123 123",
+      "firstName": "123",
+      "lastName": "123",
+      "role": "General Member",
+      "responsibilityArea": "",
+      "teamPosition": "Core Member",
+      "availability": "Available",
+      "bio": "",
+      "profileCompleted": true
+    },
+    {
+      "id": "kqrxes",
+      "email": "Umut@gmail.com",
+      "password": "Muammer2003",
+      "name": "umut ileri",
+      "firstName": "umut",
+      "lastName": "ileri",
+      "role": "UI/UX Designer",
+      "responsibilityArea": "asdasd",
+      "teamPosition": "Lead Member",
+      "availability": "Available",
+      "bio": "asdasd",
+      "emailNotifications": true,
+      "showRole": true,
+      "publicVisibility": true,
+      "profileCompleted": true,
+      "createdAt": "2026-06-13T19:45:49.255Z"
+    },
+    {
+      "id": "0coggr",
+      "email": "umut2@gmail.com",
+      "password": "Muammer2003",
+      "name": "Umut İleri",
+      "firstName": "Umut",
+      "lastName": "İleri",
+      "role": "",
+      "responsibilityArea": "",
+      "teamPosition": "Core Member",
+      "availability": "Available",
+      "bio": "",
+      "emailNotifications": true,
+      "showRole": true,
+      "publicVisibility": false,
+      "profileCompleted": false,
+      "createdAt": "2026-06-13T20:08:16.258Z"
+    },
+    {
+      "id": "l3r5q5",
+      "email": "umutileri@puer.com",
+      "password": "1234",
+      "name": "umut Ileri",
+      "firstName": "umut",
+      "lastName": "Ileri",
+      "role": "",
+      "responsibilityArea": "",
+      "teamPosition": "",
+      "availability": "",
+      "bio": "",
+      "emailNotifications": true,
+      "showRole": true,
+      "publicVisibility": false,
+      "profileCompleted": true,
+      "createdAt": "2026-06-15T17:20:50.517Z"
+    },
+    {
+      "id": "pizi6",
+      "email": "boran@puer.com",
+      "password": "1234",
+      "name": "boran koseoglu",
+      "firstName": "boran",
+      "lastName": "koseoglu",
+      "role": "",
+      "responsibilityArea": "",
+      "teamPosition": "",
+      "availability": "",
+      "bio": "",
+      "emailNotifications": true,
+      "showRole": true,
+      "publicVisibility": false,
+      "profileCompleted": true,
+      "createdAt": "2026-06-16T06:29:20.509Z"
+    }
+  ],
+  "evaluations": []
+}
