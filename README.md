@@ -9,16 +9,12 @@ Puer Management helps student teams organize projects, manage tasks, track contr
 ## 🌐 Live Demo
 
 ## One Page
-
+https://umutileri.github.io/PuerManagement-One-Page-Web-Final/
 
 ### Project Website
-https://YOUR-ONE-PAGE-LINK
-
-### GitHub Repository
-https://github.com/Umutileri/Puer_Management_CEIT435_436
+.
 
 ---
-
 ## 📖 Project Overview
 
 Puer Management was developed as part of the CEIT 435 and CEIT 436 Project Development and Management courses at Middle East Technical University (METU).
@@ -30,9 +26,7 @@ The platform addresses common challenges in student group projects, including:
 - Difficulty tracking project progress
 - Limited communication of responsibilities
 - Fair peer evaluation concerns
-
 ---
-
 ## ✨ Key Features
 
 ### 🔐 Authentication System
@@ -72,7 +66,6 @@ The platform addresses common challenges in student group projects, including:
 - Team Templates
 
 Ready-to-use project structures help users start projects faster.
-
 ### ⭐ Peer Evaluation System
 - Anonymous evaluations
 - Identified evaluations
@@ -89,11 +82,8 @@ Ready-to-use project structures help users start projects faster.
 - Role selection
 - Availability settings
 - Team responsibility tracking
-
 ---
-
 ## 🛠️ Technologies Used
-
 ### Frontend
 - React
 - TypeScript
@@ -113,13 +103,9 @@ Ready-to-use project structures help users start projects faster.
 - Git
 - GitHub
 - Visual Studio Code
-
 ---
-
 ## 🎨 UI/UX Improvements
-
 The final version introduces a completely redesigned user interface focused on:
-
 - Improved usability
 - Cleaner navigation
 - Modern visual design
@@ -128,11 +114,8 @@ The final version introduces a completely redesigned user interface focused on:
 - Enhanced accessibility
 
 The project color palette was redesigned around orange tones to create a more consistent visual identity.
-
 ---
-
 ## 🔮 Future Improvements
-
 - Advanced peer evaluation analytics
 - Custom template creation
 - Instructor dashboard
@@ -140,11 +123,8 @@ The project color palette was redesigned around orange tones to create a more co
 - Cloud database integration
 - Mobile application support
 - Production deployment
-
 ---
-
 ## 👥 Project Team
-
 ### Group 03
 
 - Boran Köseoğlu
@@ -152,11 +132,8 @@ The project color palette was redesigned around orange tones to create a more co
 - İrem Cürül
 - Doruk Alp Soğukkuyu
 - Mert Gedik
-
 ---
-
 ## 📚 Course Information
-
 CEIT 435 – Project Development and Management I
 
 CEIT 436 – Project Development and Management II
